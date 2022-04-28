@@ -1,5 +1,5 @@
-#ifndef I3_FOCUS_LAST_SERVER
-#define I3_FOCUS_LAST_SERVER
+#ifndef I3_TOOLS_SERVER
+#define I3_TOOLS_SERVER
 
 #include <functional>
 #include <string>

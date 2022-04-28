@@ -18,7 +18,7 @@ App::App() noexcept {};
 
 std::filesystem::path get_socket_dir() {
   return std::filesystem::temp_directory_path() /
-         ("i3_focus_last." + std::to_string(getuid()) + std::getenv("DISPLAY"));
+         ("i3_tools." + std::to_string(getuid()) + std::getenv("DISPLAY"));
 }
 
 void App::execute(const std::vector<char *> args) {
@@ -82,13 +82,13 @@ void App::exec_switch_window() {
 }
 
 void App::exec_help() {
-  std::cout << "usage: i3-focuslast [-h] [--switch-window].\n\n"
-            << "Focus previos focused window for i3wm.\n\n"
+  std::cout << "usage: i3-tools [-h] [--switch-window]\n\n"
+            << "Focus previous focused window for i3wm.\n\n"
             << "This app should be launched with i3wm without options\n"
             << "and then use you may use it with --switch-window option.\n\n"
             << "options:\n"
             << "  -h, help         show help and exit\n"
-            << "  --switch-window  focus previos focused window" << std::endl;
+            << "  --switch-window  focus previous focused window" << std::endl;
 }
 
 std::optional<i3ipc::container_t> i3_find_scratchpad(const cont_list &nodes) {

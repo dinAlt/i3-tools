@@ -1,5 +1,5 @@
-#ifndef I3_FOCUS_LAST_CLIENT
-#define I3_FOCUS_LAST_CLIENT
+#ifndef I3_TOOLS_CLIENT
+#define I3_TOOLS_CLIENT
 
 #include <string>
 

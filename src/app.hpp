@@ -1,5 +1,5 @@
-#ifndef I3_FOCUS_LAST_APP
-#define I3_FOCUS_LAST_APP
+#ifndef I3_TOOLS_APP
+#define I3_TOOLS_APP
 
 #include <memory>
 #include <mutex>
